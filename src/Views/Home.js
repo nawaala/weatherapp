@@ -15,9 +15,45 @@ const NavButton = ({text, path}) =>{
 const Home = () =>{
     return(
         <div>
-            <h1>The weather channel</h1>
+            <h1>Health Advice Group</h1>
+            <body>
+                <nav className='navbar'>
+                    <div className='container'>
+                        <div className='logo'> Health Advice Group</div>
+                        <ul className='nav'>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Environment</a>
+                            </li>
+                            <li>
+                                <a href="#">Advice</a>
+                            </li>
+                            <li>
+                                <a href="#">Charts</a>
+                            </li>
+                            <li>
+                                <a href="#">Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <header>
+                    <div className='container'>
+                        <div>
+                            <h1>Health Advice group</h1>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                </header>
+                
+            </body>
+
             
-      
 
         </div>
     )
