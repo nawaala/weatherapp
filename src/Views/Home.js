@@ -1,4 +1,16 @@
 import './Home.css'
+import { useNavigate } from "react-router-dom";
+
+const NavButton = ({text, path}) =>{
+    const navigate = useNavigate()
+
+    return(
+    <button className="nav-button" onClick={() => navigate(path)}>
+        {text}
+    </button>
+    )
+}
+
 
 const Home = () =>{
     return(
@@ -11,4 +23,4 @@ const Home = () =>{
     )
 }
 
-export default Home
+export default Home;
