@@ -1,6 +1,6 @@
 import './Home.css'
 import { useNavigate } from "react-router-dom";
-
+import weatherlogo from "../Assets/weatherlogo.png";
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
 
@@ -44,8 +44,11 @@ const Home = () =>{
                     <div className='container'>
                         <div>
                             <h1>Health Advice group</h1>
-                            <p></p>
+                            <p>View Weather forecasting now</p>
                         </div>
+                        <div>
+                      
+                        
 
 
                     </div>
