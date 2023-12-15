@@ -1,6 +1,8 @@
 import './Home.css'
 import { useNavigate } from "react-router-dom";
-import weatherlogo from "../Assets/weatherlogo.png";
+import weatherlogo from "../Assets/weatherlogo.PNG";
+
+
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
 
@@ -22,38 +24,71 @@ const Home = () =>{
                         <div className='logo'> Health Advice Group</div>
                         <ul className='nav'>
                             <li>
-                                <a href="#">Home</a>
+                                <div className="nav-buttons">
+                                    <NavButton text="Home" path="/home"/>
+                                </div>
                             </li>
                             <li>
-                                <a href="#">Environment</a>
+                                <div className="nav-buttons">
+                                    <NavButton text="Environment" path="/Environment"/>
+                                </div>
                             </li>
                             <li>
-                                <a href="#">Advice</a>
+                                <div className="nav-buttons">
+                                    <NavButton text="Advice" path="/Advice"/>
+                                </div>
                             </li>
                             <li>
-                                <a href="#">Charts</a>
+                                <div className="nav-buttons">
+                                    <NavButton text="Charts" path="/Charts"/>
+                                </div>
                             </li>
                             <li>
-                                <a href="#">Account</a>
+                                <div className="nav-buttons">
+                                    <NavButton  text="Account" path="/Account"/>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
 
-                <header>
+                <header className='header'>
                     <div className='container'>
                         <div>
                             <h1>Health Advice group</h1>
-                            <p>View Weather forecasting now</p>
+                            <p>
+                                View Weather forecasting now
+                            </p>
                         </div>
-                        <div>
-                      
-                        
+                        <img src={weatherlogo}/>
 
-
-                    </div>
+                    </div>      
                 </header>
-                
+
+                <section className='boxes'>
+                    <div className='container'>
+                        <div className='box'>
+                            <h2>< i className='fas fa-arrows-alt-v'></i>Alignment and space</h2>
+                            <p>
+                                Explore more
+                            </p>
+                        </div>
+
+                        <div className='box'>
+                            <h2>< i className='fas fa-arrows-alt-v'></i>Alignment and space</h2>
+                            <p>
+                                Explore more
+                            </p>
+                        </div>
+
+                        <div className='box'>
+                            <h2>< i className='fas fa-arrows-alt-v'></i>Alignment and space</h2>
+                            <p>
+                                Explore more
+                            </p>
+                        </div>
+                    </div>
+                </section>  
             </body>
 
             
