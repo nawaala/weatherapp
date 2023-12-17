@@ -34,6 +34,9 @@ const Header = () => {
                         <NavButton  text="Account" path="/Account"/>
                     </li>
                 </ul>
+                
+            
+        
             </div>
         </nav> 
     )
