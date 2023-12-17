@@ -2,7 +2,7 @@ import './Home.css'
 import { useNavigate } from "react-router-dom";
 import weatherlogo from "../Assets/weatherlogo.PNG";
 import Header from '../Components/Header';
-
+import sky from "../Assets/sky.mp4";
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
 
@@ -22,8 +22,13 @@ const Home = () =>{
             <body>
                 <header className='header'>
                     <div className='container'>
+                        <video autoPlay muted loop id="video-background">
+                            <source src={sky} type="video/mp4"/>
+                            Your browser does not support the video tag
+                        </video>
                         <div>
                             <h1>Health Advice group</h1>
+                            
                             <p>
                                 View Weather forecasting now
                             </p>
