@@ -1,0 +1,44 @@
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: #30bd9e;
+    height: 81px;
+}
+
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar .nav-button {
+    color: #333;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.navbar .nav-button:hover {
+    color: rgb(74, 155, 114);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+
+}

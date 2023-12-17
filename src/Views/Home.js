@@ -1,7 +1,7 @@
 import './Home.css'
 import { useNavigate } from "react-router-dom";
 import weatherlogo from "../Assets/weatherlogo.PNG";
-
+import Header from '../Components/Header';
 
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
@@ -17,41 +17,9 @@ const NavButton = ({text, path}) =>{
 const Home = () =>{
     return(
         <div>
-            <h1>Health Advice Group</h1>
+            <Header/>
+            <title>Health Advice Group</title>
             <body>
-                <nav className='navbar'>
-                    <div className='container'>
-                        <div className='logo'> Health Advice Group</div>
-                        <ul className='nav'>
-                            <li>
-                                <div className="nav-buttons">
-                                    <NavButton text="Home" path="/home"/>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="nav-buttons">
-                                    <NavButton text="Environment" path="/Environment"/>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="nav-buttons">
-                                    <NavButton text="Advice" path="/Advice"/>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="nav-buttons">
-                                    <NavButton text="Charts" path="/Charts"/>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="nav-buttons">
-                                    <NavButton  text="Account" path="/Account"/>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
                 <header className='header'>
                     <div className='container'>
                         <div>
@@ -60,8 +28,7 @@ const Home = () =>{
                                 View Weather forecasting now
                             </p>
                         </div>
-                        <img src={weatherlogo}/>
-
+                        
                     </div>      
                 </header>
 
@@ -87,6 +54,7 @@ const Home = () =>{
                                 Explore more
                             </p>
                         </div>
+                      
                     </div>
                 </section>  
             </body>
