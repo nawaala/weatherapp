@@ -1,6 +1,8 @@
 import './Header.css';
 import { useNavigate } from "react-router-dom";
 import weatherlogo from "../Assets/weatherlogo.PNG";
+import Script from "../Components/Script.js";
+
 
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
@@ -34,6 +36,7 @@ const Header = () => {
                         <NavButton  text="Account" path="/Account"/>
                     </li>
                 </ul>
+            <Script/>
                 
             
         
