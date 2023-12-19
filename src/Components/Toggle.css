@@ -11,29 +11,32 @@
 }
 
 .toggle.active{
-    background-image:url('https://i.ibb.co/rt3HybH/close.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
+    
 
 }
 
 .menu{
     position: absolute;
-    top: 0;
-    right: 0;
+    top:75px;
+    left: 0;
     width: 300px;
     height: 100%;
-    display: flex;
+    z-index: 999;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center; */
+    background-image:url('../Assets/close.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
 }
 
 .menu ul{
     position: relative;
     list-style: none;
+    display:flex;
+    flex-direction: column;
 }
 
 .menu ul li a {
@@ -45,4 +48,8 @@
 
 .menu ul li a:hover{
     color: aqua;
+}
+.close-button{
+    background: none;
+    border:none;
 }
