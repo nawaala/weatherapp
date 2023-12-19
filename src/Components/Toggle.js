@@ -32,12 +32,13 @@ const Toggle = () => {
             {
                 isOpen && <div className="menu">
                     <ul>
+                        <button onClick={()=>setIsOpen(false)} className="close-button"><img src={closeImage}/> </button>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Destination</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
-                        <button onClick={()=>setIsOpen(false)} className="close-button"><img src={closeImage}/> </button>
+                        
                     </ul>
                 </div>
 
