@@ -1,0 +1,6 @@
+.search-bar{
+    max-width: 1080px;
+    margin: 20px auto; /*top and bottom 20px and auto to centre */
+    font-family: "Roboto", Arial !important;
+    background-color: #d5d4d4;
+}

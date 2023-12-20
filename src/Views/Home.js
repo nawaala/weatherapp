@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import weatherlogo from "../Assets/weatherlogo.PNG";
 import Header from '../Components/Header';
 import sky from "../Assets/sky.mp4";
+import Search from "../Components/Search"
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
 
@@ -15,9 +16,14 @@ const NavButton = ({text, path}) =>{
 
 
 const Home = () =>{
+    const handleOnSearchChange = (searchData) => {
+        console.log (searchData);
+    }
+    
     return(
         <div>
             <Header/>
+            <Search onSearchChange={handleOnSearchChange}/>
             <title>Health Advice Group</title>
             <body>
                 <header className='header'>
