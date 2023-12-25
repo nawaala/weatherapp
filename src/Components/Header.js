@@ -2,6 +2,7 @@ import './Header.css';
 import { useNavigate } from "react-router-dom";
 import weatherlogo from "../Assets/weatherlogo.PNG";
 import Toggle from "./Toggle.js";
+import Charts from '../Views/Charts.js';
 
 
 const NavButton = ({text, path}) =>{
@@ -13,7 +14,7 @@ const NavButton = ({text, path}) =>{
     </button>
     )
 }
-
+ 
 const Header = () => {
     return(
         <nav className='navbar'>

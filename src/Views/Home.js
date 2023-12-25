@@ -4,6 +4,9 @@ import weatherlogo from "../Assets/weatherlogo.PNG";
 import Header from '../Components/Header';
 import sky from "../Assets/sky.mp4";
 import Search from "../Components/Search"
+import Charts from './Charts';
+
+
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
 
@@ -19,7 +22,7 @@ const Home = () =>{
     const handleOnSearchChange = (searchData) => {
         console.log (searchData);
     }
-    
+
     return(
         <div>
             <Header/>
