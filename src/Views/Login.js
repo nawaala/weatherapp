@@ -25,7 +25,7 @@ const Login = ()  => {
             localStorage.setItem("userId", res.data.id)
             localStorage.setItem("username", res.data.username)
 
-            navigate("/profile")
+            
         })
 
         .catch((err) => {

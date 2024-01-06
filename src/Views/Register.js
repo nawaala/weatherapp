@@ -3,7 +3,6 @@ import AuthForm from "../AuthForms/AuthForm"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { useAuth } from "../Contexts/AuthContext"
-
 import axios from "axios"
 
 const Register = () => {
@@ -27,7 +26,7 @@ const Register = () => {
             localStorage.setItem("userId", res.data.id)
             localStorage.setItem("username", res.data.username)
 
-            navigate("/profile")
+          
         })
         .catch ((err) => {
             setError(err.response?.data?.detail || err.message || "An unknown error occured")

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import weatherlogo from "../Assets/weatherlogo.PNG";
 import Toggle from "./Toggle.js";
 import Charts from '../Views/Charts.js';
-
+import Register from '../Views/Register.js';
 
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
@@ -35,7 +35,7 @@ const Header = () => {
                         <NavButton text="Charts" path="/Charts"/>              
                     </li>
                     <li>                  
-                        <NavButton  text="Account" path="/Account"/>
+                        <NavButton  text="Account" path="/Register"/>
                     </li>
                     
                 </ul>

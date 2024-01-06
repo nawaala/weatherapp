@@ -97,5 +97,79 @@ ul {
 
 }
 
+.videoForecast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.videoForecast h1{
+    display: flex;
+    position: absolute;
+    border-left: 200px;
+    top: 0;
+    width:450px;
+    text-align: center;
+    justify-content: center;
+    background-color: #0a51cc;
+    color: white;
+}
+
+.videoForecast img{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+
+}
+
+.advice-container{
+    align-items: center ;
+    font-size: 13px;
+    border: #4e4d4d solid;
+
+   
+}
+
+.advice-container h1{
+
+}
+
+.row-menu{
+    display: flex;
+
+}
+.spacer {
+    flex: 0 0 40px;
+  }
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+}
 
 
+.info-section{
+   
+    padding-left: 80px;
+    padding-top: 200px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+
+
+button{
+    border: none;
+    background: none;
+    padding: 0;  
+    text-decoration: none;
+    outline: none;
+    cursor: pointer; 
+  }
