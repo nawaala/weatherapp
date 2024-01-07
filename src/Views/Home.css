@@ -11,13 +11,18 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background: whi ;
+    background: white ;
     
 }
 #adeee0
 img{
     max-width: 100%;
 }
+
+.search-bar{
+    background-color: black;
+}
+
 
 h1, h2{
     margin-bottom: 15px;
@@ -28,12 +33,13 @@ ul {
 }
 
 .container{
-    z-index: 10; 
+    z-index: 100; 
 }
 
 .header{
+    height: 500px;
     position: relative ;
-    background-color: rgb(253, 253, 253);
+    
     color: #333;
     min-height: 400px;
 }
@@ -132,8 +138,16 @@ ul {
 }
 
 .advice-container h1{
+    color: black;
 
 }
+
+.advice-container h2{
+    color: grey;
+
+}
+
+
 
 .row-menu{
     display: flex;

@@ -33,7 +33,8 @@ const Home = () => {
       <title>Health Advice Group</title>
       <body>
         <header className="header">
-          <div className="container">
+          <div className="container" >
+            
             <video autoPlay muted loop id="video-background">
               <source src={sky} type="video/mp4" />
               Your browser does not support the video tag
@@ -143,7 +144,7 @@ const Home = () => {
                   </NavButton>
                   <div className="spacer"></div>
                   <NavButton path="/Advice" className="menu-button">
-                    <img src={menu} width={50} height={50} />
+                    <img src={menu} width={50} height={50}  />
                   </NavButton>
                 </div>
               </div>
