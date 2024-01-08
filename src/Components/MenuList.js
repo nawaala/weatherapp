@@ -5,10 +5,10 @@ import clear from '../Assets/clear.png';
 import snow from '../Assets/snow.png';
 import wind from '../Assets/wind.png';
 
-export const MenuList = [
+ const MenuList =  [
     {
         name: "Hayfever",
-        image: hayfever,
+        image: hayfever ,
         details: "Make sure to..."
     },
     {
@@ -38,3 +38,4 @@ export const MenuList = [
     },
 ];
 
+export default MenuList;
