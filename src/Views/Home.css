@@ -32,16 +32,19 @@ ul {
     list-style-type: none;
 }
 
-.container{
-    z-index: 100; 
+.header.container{
+    position: relative;
+ 
 }
 
 .header{
     height: 500px;
     position: relative ;
-    
-    color: #333;
     min-height: 400px;
+    text-shadow:  2px 2px 4px rgba(0,0,0,0.5) ;
+    font-weight: bold;
+    font-size: 36px;
+    outline: 2px solid black;
 }
 
 #video-background{
@@ -51,13 +54,9 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7;
-}
-
-.header h1{
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.2;
+    opacity: 0.5;
+    
+   
 }
 
 .header img {
@@ -68,6 +67,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .boxes .container {

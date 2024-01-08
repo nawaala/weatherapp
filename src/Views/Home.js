@@ -33,15 +33,13 @@ const Home = () => {
       <title>Health Advice Group</title>
       <body>
         <header className="header">
-          <div className="container" >
-            
+          <div className="container" > 
             <video autoPlay muted loop id="video-background">
               <source src={sky} type="video/mp4" />
               Your browser does not support the video tag
             </video>
-            <div>
+            <div className="video-text">
               <h1>Health Advice group</h1>
-
               <p>View Weather forecasting now</p>
             </div>
           </div>
