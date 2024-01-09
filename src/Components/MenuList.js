@@ -3,7 +3,7 @@ import hayfever from '../Assets/hayfever.jpg';
 import asthma from '../Assets/asthma.jpg';
 import clear from '../Assets/clear.png';
 import snow from '../Assets/snow.png';
-import wind from '../Assets/wind.png';
+import rain from '../Assets/rain.png';
 
  const MenuList =  [
     {
@@ -28,7 +28,7 @@ import wind from '../Assets/wind.png';
     },
     {
         name: "Windy",
-        image: hayfever,
+        image: rain,
         details: "Make sure to..."
     },
     {

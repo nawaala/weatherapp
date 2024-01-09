@@ -13,7 +13,7 @@ const Advice = () => {
             {MenuList.map((menuItem, key) => {
               return (
                 <div key={key}>
-                  <img src={menuItem.image} alt={menuItem.name} />
+                  <img className='image-sizes' src={menuItem.image} alt={menuItem.name}  />
                   <p>{menuItem.details}</p>
                 </div>
               );
@@ -23,5 +23,6 @@ const Advice = () => {
       </div>
     );
   };
+
   
   export default Advice;

@@ -9,13 +9,13 @@ import Advice from './Views/Advice';
 function App() {
   return (
     <div className="App">
+
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/Charts" element={<Charts />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Advice" element={<Advice />} />
       </Routes>
-
     </div>
   );
 }

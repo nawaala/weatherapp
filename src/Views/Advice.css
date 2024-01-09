@@ -11,69 +11,45 @@
 
 }
 
-.menu {
-    
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .menu .menuTitle {
-    font-family: cursive;
-    font-size: 60px;
-  }
-  
-  .menuList {
-    width: 70vw;
-    height: auto;
-    display: grid;
-    
-    place-items: center;
-  }
 
-  .menuList img {
-    width: 100px; /* Adjust the width to your desired size */
-    height: auto; /* Maintain aspect ratio */
-  }
+.image-sizes{
+  width: 400px;
+  height: 250px;
+  border-radius: 100px;
+
   
-  /* MENU ITEM STYLING */
-  
-  .menuItem {
-    border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-  .menuItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-  
-  .menuItem div {
-  
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .menuItem h1,
-  .menuItem p {
-    margin-left: 20px;
-  }
-  
-  @media only screen and (max-width: 1300px) {
-    .menuList {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .menuList {
-      grid-template-columns: 1fr;
-    }
-  }
+}
+
+.image-sizes p{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+.menu{
+  display: flex;
+  margin-top:450px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.menuList{
+  margin-top: 500px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 150px);
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1200px;
+  grid-gap: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  text-align: center;
+  font-size: larger;
+  font-weight: 900;
+}
+
