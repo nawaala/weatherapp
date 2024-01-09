@@ -15,6 +15,7 @@ const Advice = () => {
                 <div key={key}>
                   <img className='image-sizes' src={menuItem.image} alt={menuItem.name}  />
                   <p>{menuItem.details}</p>
+                  
                 </div>
               );
             })}

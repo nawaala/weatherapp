@@ -26,6 +26,8 @@
   justify-content: center;
   margin-left: 100px;
 }
+
+
 .menu{
   display: flex;
   margin-top:450px;
@@ -33,7 +35,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 
 .menuList{
