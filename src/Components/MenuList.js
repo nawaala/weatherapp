@@ -9,32 +9,32 @@ import rain from '../Assets/rain.png';
     {
         name: "Hayfever",
         image: hayfever ,
-        details: "Make sure to..."
+        details: "Taking hayfever tablets."
     },
     {
         name: "Asthma",
         image: asthma,
-        details: "Make sure to..."
+        details: "Have a cold? "
     },
     {
         name: "Cold",
         image: sick,
-        details: "Make sure to..."
+        details: " Dealing with dust allergies..."
     },
     {
         name: "Hot weather",
         image: clear,
-        details: "Make sure to..."
+        details: "Dealing with Hot weather"
     },
     {
         name: "Windy",
         image: rain,
-        details: "Make sure to..."
+        details: "Is it raining"
     },
     {
         name: "Ice Cold",
         image: snow,
-        details: "Make sure to..."
+        details: "Is it freezing?"
     },
 ];
 
