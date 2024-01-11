@@ -11,7 +11,7 @@ const Advice = () => {
           <Toggle />
         </div>
         <div className="advice-title">
-          Advice For you
+          Advice For you :)
         </div>
         <div className="menu">
           <div className="menuList">
@@ -33,5 +33,6 @@ const Advice = () => {
       </div>
     );
   };
-  
+
   export default Advice;
+

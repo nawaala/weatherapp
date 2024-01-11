@@ -6,6 +6,8 @@ const  MenuItem =  ({image, name, details}) => {
             <div style={{ backgroundImage:`url(${image})` }}></div>
             <h1>{name}</h1>
             <p>{details}</p>
+            
+
         </div>
     );
 
