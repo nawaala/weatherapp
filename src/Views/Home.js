@@ -49,21 +49,22 @@ const Home = () => {
           <div className="container">
             <div className="box">
               <h2>
-                <i className="fas fa-arrows-alt-v"></i>Alignment and space
+                <i className="fas fa-arrows-alt-v"></i>Lorem ipsum  dolor sit amet, consectetur adipiscing elit
               </h2>
               <p>Explore more</p>
             </div>
 
             <div className="box">
               <h2>
-                <i className="fas fa-arrows-alt-v"></i>Alignment and space
+                <i className="fas fa-arrows-alt-v"></i>Lorem ipsum  dolor sit amet, consectetur adipiscing elit
               </h2>
               <p>Explore more</p>
             </div>
 
             <div className="box">
               <h2>
-                <i className="fas fa-arrows-alt-v"></i>Alignment and space
+                <i className="fas fa-arrows-alt-v"></i>Lorem ipsum  dolor sit amet, consectetur adipiscing elit
+      
               </h2>
               <p>Explore more</p>
             </div>

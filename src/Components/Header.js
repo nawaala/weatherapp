@@ -20,7 +20,7 @@ const Header = () => {
         <nav className='navbar'>
             <div className='container'>
                 <Toggle/>
-                <div className='logo'><img src={weatherlogo}/></div>
+                <div className='logo'><img src={weatherlogo} height={80}/></div>
                 <ul className='nav'>
                     <li>       
                         <NavButton text="Home" path="/home"/>           

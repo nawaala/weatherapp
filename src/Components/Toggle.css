@@ -18,7 +18,8 @@
 
 .menu{
     position: absolute;
-    top:70px;
+    top: -370px;
+    
     left: 0;
     width: 300px;
     height: 100%;
