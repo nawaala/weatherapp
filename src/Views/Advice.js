@@ -7,7 +7,12 @@ import Toggle from "../Components/Toggle";
 const Advice = () => {
     return (
       <div>
-        <div className="advice-title"><Toggle/>Advice For you</div>
+        <div className="toggle-color">
+          <Toggle />
+        </div>
+        <div className="advice-title">
+          Advice For you
+        </div>
         <div className="menu">
           <div className="menuList">
             {MenuList.map((menuItem, key) => {
