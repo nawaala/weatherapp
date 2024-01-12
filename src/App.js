@@ -5,6 +5,7 @@ import Home from  './Views/Home'
 import Charts from './Views/Charts';
 import Register from './Views/Register';
 import Advice from './Views/Advice';
+import Environment from './Views/Environment';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Charts" element={<Charts />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Advice" element={<Advice />} />
+        <Route path="/Environment" element ={<Environment />} />
       </Routes>
     </div>
   );
