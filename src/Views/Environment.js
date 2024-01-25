@@ -80,7 +80,7 @@ function displayDetails(){
     }
   })
 }
-displayDetails();
+
 const Environment = () => {
   return (
     <div>
