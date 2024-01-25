@@ -19,11 +19,22 @@ const client = axios.create({
 
 
 
+
 const Register = () => {
     const [currentUser, setCurrentUser] = useState();
     const [registrationToggle, setRegistrationToggle] = useState(faslse);
     const[username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+
+    useEffect(() => {
+      client.get("/api/user")
+      .then(function(res){
+        setCurrentUser(true);
+      })
+      .catch(function(error) {
+        setCurrentUser(false);
+      })
+    }, []);
 
     function update_form_btn() {
         if (registrationToggle){
@@ -33,6 +44,8 @@ const Register = () => {
             document.getElementById("form_btn").innerHTML = "Log in";
             setRegistrationForm(true);
         }
+
+
      function submitRegistration(e) {
         e.preventDefault();
         client.post(
@@ -46,7 +59,30 @@ const Register = () => {
             setCurrentUser(true);
         });;
      }
+    }
 
+    function submitLogin(e){
+      e.preventDefualt();
+      client.post(
+        "/api/login",
+        {
+          email: email,
+          password: password
+        }
+      ).then (function(res) {
+        setCurrentUser(true)
+      })
+      ;
+    }
+
+    function submitLogout(e) {
+      e.preventDefault();
+      client.post(
+        "api/logout",
+        {withCredentials: true}
+      ).then(function(res) {
+        setCurrentUser(false)
+      })
     }
 
     if (currentUser){
