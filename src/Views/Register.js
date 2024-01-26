@@ -1,4 +1,4 @@
-import "./AuthPage.css"
+import "./Register.css"
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Container from 'react-bootstrap/Container'
@@ -22,7 +22,8 @@ const client = axios.create({
 
 const Register = () => {
     const [currentUser, setCurrentUser] = useState();
-    const [registrationToggle, setRegistrationToggle] = useState(faslse);
+    const [registrationToggle, setRegistrationToggle] = useState(false);
+    const [email, setEmail] = useState('');
     const[username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -39,27 +40,36 @@ const Register = () => {
     function update_form_btn() {
         if (registrationToggle){
             document.getElementById("form_btn").innerHTML = "Register";
-            setRegistrationForm(false);
+            setRegistrationToggle(false);
         } else{
             document.getElementById("form_btn").innerHTML = "Log in";
-            setRegistrationForm(true);
+            setRegistrationToggle(true);
         }
+      }
 
 
-     function submitRegistration(e) {
-        e.preventDefault();
+    function submitRegistration(e) {
+      e.preventDefault();
+      client.post(
+        "/api/register",
+        {
+          email: email,
+          username: username,
+          password: password
+        }
+      ).then(function(res) {
         client.post(
-            "/api/register",
-            {
-                email: email,
-                username: username,
-                password: password
-            }
+          "/api/login",
+          {
+            email: email,
+            password: password
+          }
         ).then(function(res) {
-            setCurrentUser(true);
-        });;
-     }
+          setCurrentUser(true);
+        });
+      });
     }
+    
 
     function submitLogin(e){
       e.preventDefualt();
@@ -112,7 +122,7 @@ const Register = () => {
         <div>
              <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand>Authentication App</Navbar.Brand>
+                    <Navbar.Brand>Registration Page</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
