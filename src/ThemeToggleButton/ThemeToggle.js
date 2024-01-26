@@ -7,6 +7,7 @@ const ThemeToggleButton = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
+    /* This button will allow users to switch between dark mode and light mode*/
     <button className={"theme-toggle-button ${theme}"} onClick={toggleTheme}>
       {theme === "light" ? <darktheme /> : <sunIcon />}
     </button>

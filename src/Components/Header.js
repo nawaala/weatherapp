@@ -4,6 +4,7 @@ import weatherlogo from "../Assets/weatherlogo.PNG";
 import Toggle from "./Toggle.js";
 import Charts from '../Views/Charts.js';
 import Register from '../Views/Register.js';
+import ThemeToggleButton from '../ThemeToggleButton/ThemeToggle'
 
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
@@ -36,6 +37,9 @@ const Header = () => {
                     </li>
                     <li>                  
                         <NavButton  text="Account" path="/Register"/>
+                    </li>
+                    <li>
+                        <ThemeToggleButton/>
                     </li>
                     
                 </ul>

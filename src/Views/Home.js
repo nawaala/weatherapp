@@ -45,6 +45,7 @@ const Home = () => {
           </div>
         </header>
 
+        /* these cards will display info */
         <section className="boxes">
           <div className="container">
             <div className="box">
@@ -64,7 +65,6 @@ const Home = () => {
             <div className="box">
               <h2>
                 <i className="fas fa-arrows-alt-v"></i>Lorem ipsum  dolor sit amet, consectetur adipiscing elit
-      
               </h2>
               <p>Explore more</p>
             </div>
