@@ -3,13 +3,12 @@ import { useTheme } from "../Contexts/ThemeContext";
 import {ReactComponent as SunIcon} from "../Assets/clear.png"
 import {ReactComponent as MoonIcon} from "../Assets/nightmode.png"
 const ThemeToggleButton = () => {
-    const {theme, toggleTheme} = useTheme();
+  
     
-    return <button className={`theme-toggle-button ${theme}`} onClick={toggleTheme}>
+    return <button className={`theme-toggle-button `}>
         {
-            theme === "light-theme"
-            ? <MoonIcon/>
-            : <SunIcon/> 
+       
+    
             }
         </button>
 }
