@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useAuth } from "../Contexts/AuthContext";
 
 const Login = ()  => {
-    const naviagte = useNavigate();
+    const navigate = useNavigate();
     const [error, setError] = useState()
 
     const {setUserId, setUsername} = useAuth()
