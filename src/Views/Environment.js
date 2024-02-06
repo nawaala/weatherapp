@@ -81,18 +81,20 @@ const Environment = () => {
     setSelectedOption(selectedOption);
   };
 
+
   return (
     <div>
       <div className="environment-title">
         Risk Assessments
-        <img src={title} alt="Risk Assessments" />
+        <img src={title} alt="Risk Assessments" height={200} />
+        <h1>Select an option</h1>
         <select id="SelectChoice" onChange={handleSelectChange}>
           {option.map((item) => (
             <option key={item.option} value={item.option}>
               {item.option}
             </option>
           ))}
-        </select>
+        </select >  
         <p id="selectDetail">{selectedOption.advice}</p>
       </div>
     </div>

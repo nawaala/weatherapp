@@ -1,5 +1,7 @@
 .environment-title img{
     display: flex;
+    align-items: center;
+    padding-left: 1000px;
 }
 
 
