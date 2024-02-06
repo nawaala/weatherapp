@@ -8,7 +8,6 @@ import { useAuth } from "../Contexts/AuthContext";
 const Login = ()  => {
     const navigate = useNavigate();
     const [error, setError] = useState()
-
     const {setUserId, setUsername} = useAuth()
     const onSubmit = async (e, email, password) => {
         e.preventDefault();

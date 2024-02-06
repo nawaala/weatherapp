@@ -7,11 +7,6 @@ const AuthForm = ({ onSubmit, formLabel }) => {
 
     return (
         <form className='auth-form' onSubmit={(e) => onSubmit(e, email, password)}>
-            <h1>SIGN UP TODAY</h1>
-            <input
-                placeholder="First and Last Name"
-            />
-               
             <label htmlFor='email-address'>Email:</label>
             <input
                 id='email-address'
@@ -42,3 +37,5 @@ const AuthForm = ({ onSubmit, formLabel }) => {
 }
 
 export default AuthForm
+
+
