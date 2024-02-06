@@ -13,10 +13,10 @@ export const AuthProvider =({children}) => {
 
     /* this is so the user can logout*/
     function logout() {
-        localStorage.removeItem("userId")
-        localStorage.removeItem("username")
         setUserId(null)
         setUsername(null)
+        localStorage.removeItem("userId")
+        localStorage.removeItem("username")
     }
     /* refer to Integrating the login _ register pages with backend 
     presentaion page 9 for explainsion */
@@ -28,3 +28,6 @@ export const AuthProvider =({children}) => {
     );
 
 }
+
+
+

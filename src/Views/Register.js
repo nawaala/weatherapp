@@ -9,7 +9,7 @@ const Register = () => {
   const [error, setError] = useState()
   const navigate = useNavigate()
 
-  const {setUserId, setUsername} = useAuth();
+  const { setUserId, setUsername} = useAuth();
 
 
 

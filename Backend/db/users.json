@@ -1,5 +1,10 @@
 {
     "users": [
-        
+        {
+            "id": "1a98b1b780ba4f1b97d5d51253d0a119",
+            "email": "nawaal@gmail.com",
+            "password": "12345",
+            "username": "nawaal"
+        }
     ]
 }
