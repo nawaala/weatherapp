@@ -5,7 +5,7 @@ import Toggle from "./Toggle.js";
 import Charts from '../Views/Charts.js';
 import Register from '../Views/Register.js';
 import ThemeToggleButton from '../ThemeToggleButton/ThemeToggle'
-
+import MagnifierGlass from "../Accessbility/ZoomIn";
 const NavButton = ({text, path}) =>{
     const navigate = useNavigate()
 
@@ -39,7 +39,7 @@ const Header = () => {
                         <NavButton  text="Account" path="/Register"/>
                     </li>
                     <li>
-                        <ThemeToggleButton/>
+                        <MagnifierGlass/>
                     </li>
                     
                 </ul>

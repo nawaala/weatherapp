@@ -7,21 +7,22 @@ import axios from "axios";
 
 const Register = () => {
   const [error, setError] = useState()
-  const navigate = useNavigate()
-
-  const { setUserId, setUsername} = useAuth();
+  const navigate= useNavigate()
 
 
+  const[setUsername, setUserId] = useAuth();
 
-  const onSubmit = async(e, email, password) => {
+
+
+  const onSubmit = async(e, email, password)=> {
     e.preventDefault();
 
-    const dataToSend = {
-      "email" : email,
-      "password" : password
-    }
+   const dataToSend={
+    "email" : email,
+    "password": password
+   }
 
-    console.log(dataToSend)
+   console.log(dataToSend)
 
     axios.post("http://localhost:8000/users/register", dataToSend)
     .then((res)=> {
@@ -55,3 +56,7 @@ const Register = () => {
   }
 
 export default Register;
+
+
+
+

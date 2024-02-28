@@ -11,6 +11,7 @@ import weatheradvice from "../Assets/weatheradvice.JPG";
 import sick from "../Assets/sick.jpg";
 import menu from "../Assets/menu.png";
 
+
 const NavButton = ({ children, path }) => {
   const navigate = useNavigate();
 
@@ -28,7 +29,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
+      <Header /> 
       <Search onSearchChange={handleOnSearchChange} />
       <title>Health Advice Group</title>
       <body>
@@ -72,12 +73,14 @@ const Home = () => {
         </section>
         <br/>
         <br/>
+        
         <div className="videoForecast">
           <h1>Video Forecast</h1>
           <img src={videoicon} width={80} height={80} />
           <video width={450} height={200} controls>
             <source src={videoforecast} type="video/mp4" />
           </video>
+        
         </div>
         
         <br />
