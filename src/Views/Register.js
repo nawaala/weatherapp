@@ -10,7 +10,7 @@ const Register = () => {
   const navigate= useNavigate()
 
 
-  const[setUsername, setUserId] = useAuth();
+  const{setUsername, setUserId} = useAuth();
 
 
 
