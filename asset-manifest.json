@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3f9be5b.css",
+    "main.js": "/static/js/main.37969da9.js",
+    "static/js/787.aafc6230.chunk.js": "/static/js/787.aafc6230.chunk.js",
+    "static/media/weathersea.mp4": "/static/media/weathersea.150f313ababc28a3b3fd.mp4",
+    "static/media/sky.mp4": "/static/media/sky.21c0c8464f7a484d7ad0.mp4",
+    "static/media/hayfever.jpg": "/static/media/hayfever.0b3f73002a2d4ca96a21.jpg",
+    "static/media/asthma.jpg": "/static/media/asthma.2623576c61ffca77067b.jpg",
+    "static/media/sick.jpg": "/static/media/sick.6db1fc95bbf107de38b6.jpg",
+    "static/media/mould.jpg": "/static/media/mould.6702b8a6c3e191b79267.jpg",
+    "static/media/RiskAssessments.jpg": "/static/media/RiskAssessments.00dfe45a9ca11e474a07.jpg",
+    "static/media/weatheradvice.JPG": "/static/media/weatheradvice.e2a7e243c9853cdce7b2.JPG",
+    "static/media/nightmode.png": "/static/media/nightmode.a0938820092b42aa095f.png",
+    "static/media/cloud.png": "/static/media/cloud.20f353f873a9b27949a9.png",
+    "static/media/weatherlogo.PNG": "/static/media/weatherlogo.0a4c866d2e3523d759cf.PNG",
+    "index.html": "/index.html",
+    "main.c3f9be5b.css.map": "/static/css/main.c3f9be5b.css.map",
+    "main.37969da9.js.map": "/static/js/main.37969da9.js.map",
+    "787.aafc6230.chunk.js.map": "/static/js/787.aafc6230.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3f9be5b.css",
+    "static/js/main.37969da9.js"
+  ]
+}
